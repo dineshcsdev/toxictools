@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - ToxicTools{% endblock %}
+
+{% block content %}
+    
+    <div class="container">
+        <div id="contact-page" class="tool-container">
+            <h1>Contact Us</h1>
+            <p class="subtitle">Have questions, feedback, or want to contribute? Reach out!</p>
+
+            <div class="contact-layout">
+                <div class="contact-form-section">
+                    <h2>Send a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type of Inquiry:</label>
+                            <select id="type" name="type">
+                                <option value="general">General Inquiry</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="contribute">Contribution</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="action-btn">Send Message</button>
+                    </form>
+                    <div id="form-message" class="response-container" style="display: none;"></div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h2>Maintainer & Community</h2>
+                    <p>ToxicTools is an open-source project built with passion.</p>
+                    <p><strong>Maintainer:</strong> Dinesh CSdev</p>
+                    <p><strong>GitHub Repository:</strong> <a href="https://github.com/dineshcsdev/ToxicTools" target="_blank">github.com/your-github/ToxicTools</a></p>
+                    <p><strong>Contributing Guide:</strong> <a href="https://github.com/dineshcsdev/ToxicTools/blob/main/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a></p>
+
+                    <h3>Community Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/dineshcsdev/ToxicTools/issues" target="_blank">GitHub Issues</a></li>
+                        <li><a href="https://github.com/dineshcsdev/ToxicTools/discussions" target="_blank">GitHub Discussions</a></li>
+                        <li><a href="https://www.linkedin.com/in/dinesh-csdev" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:dinesh.csdev@gmail.com">Direct Email</a></li>
+                    </ul>
+
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <button class="faq-question">What models does ToxicTools use?</button>
+                            <div class="faq-answer">
+                                <p>ToxicTools leverages OpenRouter API to access various models. Currently, it uses 'firellava/firellava-13b' for image-based roasts and 'deepseek/deepseek-r1' for all text-based interactions.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">Is my data safe?</button>
+                            <div class="faq-answer">
+                                <p>We do not store any user input or generated responses. All interactions are processed in real-time and are not logged on our servers.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <button class="faq-question">How can I contribute?</button>
+                            <div class="faq-answer">
+                                <p>We welcome contributions! Please check our <a href="https://github.com/dineshcsdev/ToxicTools/blob/main/CONTRIBUTING.md" target="_blank">CONTRIBUTING.md</a> guide on GitHub for details on how to get started, report bugs, or suggest features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

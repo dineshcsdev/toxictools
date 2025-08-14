@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Apology Generator - ToxicTools{% endblock %}
+
+{% block content %}
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="container">
+        <div id="apology-tool" class="tool-container">
+            <h1>Apology Generator</h1>
+            <p class="subtitle">Craft a sincere, concise, and context-aware apology.</p>
+
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="English">English</button>
+                <button class="lang-btn" data-lang="Tamil">Tamil (தமிழ்)</button>
+                <button class="lang-btn" data-lang="Tanglish">Tanglish</button>
+            </div>
+
+            <input type="text" id="user-input" placeholder="What do you need to apologize for?">
+            <button id="generate-btn" class="action-btn">Generate Apology</button>
+
+            <div class="response-wrapper">
+                <div id="response-container">
+                    <p>Your apology will appear here.</p>
+                </div>
+                <button class="copy-btn" data-target="response-container" style="display: none;">Copy</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

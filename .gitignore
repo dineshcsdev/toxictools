@@ -1,0 +1,31 @@
+# Environment variables
+.env
+
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+
+# Virtual environment
+virtualenv/
+v_env/
+env/
+.venv/
+
+# IDE-specific ignores
+.vscode/
+.idea/
+
+# Flask-specific ignores
+instance/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+/dist
+/build
+

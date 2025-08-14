@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Toxic Compliments - ToxicTools{% endblock %}
+
+{% block content %}
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="container">
+        <div id="compliment-tool" class="tool-container">
+            <h1>Toxic Compliments</h1>
+            <p class="subtitle">Get a backhanded compliment that sounds nice at first, but stings.</p>
+
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="English">English</button>
+                <button class="lang-btn" data-lang="Tamil">Tamil (தமிழ்)</button>
+                <button class="lang-btn" data-lang="Tanglish">Tanglish</button>
+            </div>
+
+            <input type="text" id="user-input" placeholder="Enter context for a compliment...">
+            <button id="generate-btn" class="action-btn">Generate Compliment</button>
+
+            <div class="response-wrapper">
+                <div id="response-container">
+                    <p>Your toxic compliment will appear here.</p>
+                </div>
+                <button class="copy-btn" data-target="response-container" style="display: none;">Copy</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

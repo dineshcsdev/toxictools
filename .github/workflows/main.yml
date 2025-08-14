@@ -1,0 +1,53 @@
+name: Python CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.9' # Or your preferred Python version (e.g., '3.10', '3.11')
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Linting (Flake8)
+      run: |
+        pip install flake8
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=120 --statistics
+
+    # - name: Run Tests (Placeholder)
+    #   run: |
+    #     # Install your testing framework (e.g., pytest)
+    #     # pip install pytest
+    #     # pytest
+    #   # This step will fail if tests fail
+
+    # - name: Deploy (Placeholder)
+    #   if: github.ref == 'refs/heads/main' # Only deploy on pushes to main branch
+    #   run: |
+    #     # Add your deployment commands here
+    #     # Examples:
+    #     # - Deploy to Heroku: heroku deploy
+    #     # - Deploy to AWS S3/EC2: aws s3 sync . s3://your-bucket
+    #     # - SSH into server and pull code: ssh user@your-server "cd /path/to/app && git pull && systemctl restart your-app"
+    #   env:
+    #     # Add any necessary environment variables for deployment (e.g., API keys, SSH keys)
+    #     # MY_DEPLOY_SECRET: ${{ secrets.MY_DEPLOY_SECRET }}
+

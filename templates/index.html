@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}ToxicTools - Home{% endblock %}
+
+{% block content %}
+    <div class="container home-page">
+        <section class="hero-section">
+            <h1 class="hero-headline">Brutally honest AI, built for fun — and for the people</h1>
+            <p class="hero-subheadline">
+                Get the unfiltered feedback you crave with a dose of humor. We believe in open-source ethics,
+                multilingual inclusivity, and empowering users with creative AI tools.
+            </p>
+            <div class="hero-ctas">
+                <a href="/tools" class="action-btn primary-cta">Explore Tools</a>
+                <a href="https://github.com/dineshcsdev/ToxicTools" target="_blank" class="btn secondary-cta">Contribute on GitHub</a>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>About the Project</h2>
+            <p>
+                In a world of sugarcoated feedback, ToxicTools offers a refreshing dose of honesty, wrapped in wit.
+                We're building a platform where AI provides humorous, direct responses, helping you see things from a different, often hilarious, perspective.
+            </p>
+            <p>
+                Built with Flask and powered by OpenRouter API, our architecture is designed for privacy and respect.
+                We process your requests in real-time without storing personal data.
+            </p>
+            <p>
+                This is an open-source initiative. We welcome issues, pull requests, and discussions from a vibrant community
+                passionate about ethical AI and creative expression.
+            </p>
+        </section>
+
+        <section class="value-section">
+            <h2>What You’ll Get</h2>
+            <ul>
+                <li><strong>Honest Feedback:</strong> Unfiltered, witty responses that cut through the noise.</li>
+                <li><strong>Fun Creativity:</strong> A unique way to engage with AI for entertainment and new perspectives.</li>
+                <li><strong>Multilingual Edge:</strong> Support for English, Tamil, and Tanglish, embracing diverse cultures.</li>
+                <li><strong>Zero-Cost Ethos:</strong> Free to use, built on open-source principles, accessible to everyone.</li>
+            </ul>
+        </section>
+
+        <section class="roadmap-section">
+            <h2>Roadmap Preview</h2>
+            <div class="roadmap-items">
+                <div class="roadmap-item">
+                    <h3>Profile-safe Roast Mode</h3>
+                    <p>An upcoming feature to ensure roasts are contextually appropriate and respectful of personal boundaries.</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>More Languages</h3>
+                    <p>Expanding language support to reach a wider global audience and enhance cultural relevance.</p>
+                </div>
+                <div class="roadmap-item">
+                    <h3>Tone Controls for Flirt</h3>
+                    <p>Giving users more granular control over the tone and style of AI-generated flirtatious lines.</p>
+                </div>
+            </div>
+            <a href="/tools" class="btn">See all tools</a>
+        </section>
+
+        <section class="open-source-section">
+            <h2>Open Source & Contributors</h2>
+            <p>ToxicTools thrives on community contributions. Whether you're a developer, designer, or just have a great idea, your input is valuable.</p>
+            <p>Join us on GitHub to:</p>
+            <div class="badge-links">
+                <a href="https://github.com/dineshcsdev/ToxicTools/issues" target="_blank" class="badge-link">GitHub Issues</a>
+                <a href="https://github.com/dineshcsdev/ToxicTools/discussions" target="_blank" class="badge-link">Discussions</a>
+                <a href="https://github.com/dineshcsdev/ToxicTools/security" target="_blank" class="badge-link">Security</a>
+                <a href="/contact" class="badge-link">Contact</a>
+            </div>
+            <p class="code-of-conduct">We maintain a friendly, safe, and inclusive environment. Humor should never cross into hate speech.</p>
+        </section>
+
+        <section class="cta-band">
+            <h2>Ready to try something honest?</h2>
+            <div class="cta-buttons">
+                <a href="/tools" class="action-btn primary-cta">Explore Tools</a>
+                <a href="/contact" class="btn secondary-cta">Contact the Maintainers</a>
+            </div>
+        </section>
+    </div>
+{% endblock %}

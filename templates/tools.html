@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Tools - ToxicTools{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="page-title">All Tools</h1>
+        <p class="subtitle">Explore the suite of AI-powered tools at your disposal.</p>
+        <div class="tool-grid">
+            <a href="/roaster" class="tool-card">
+                <h3>Roaster</h3>
+                <p>Get vicious, witty roasts for text or images.</p>
+                <button class="btn">Go to Tool</button>
+            </a>
+            <a href="/toxic-compliment" class="tool-card">
+                <h3>Toxic Compliments</h3>
+                <p>Receive backhanded compliments that sting.</p>
+                <button class="btn">Go to Tool</button>
+            </a>
+            <a href="/apology-generator" class="tool-card">
+                <h3>Apology Generator</h3>
+                <p>Craft sincere and concise apologies.</p>
+                <button class="btn">Go to Tool</button>
+            </a>
+            <a href="/ai-flirt" class="tool-card">
+                <h3>AI Flirt</h3>
+                <p>Generate playful and cheeky pickup lines.</p>
+                <button class="btn">Go to Tool</button>
+            </a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ToxicTools{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <a href="/" class="logo-link">
+                <h1>ToxicTools</h1>
+                <p class="tagline">Brutally honest AI, built for fun — and for the people</p>
+            </a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/tools">Tools</a>
+                <a href="/contact">Contact</a>
+                <a href="https://github.com/dineshcsdev/ToxicTools" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Build with zero investment but with a passion — contribute to this to help people</p>
+            <div class="social-links">
+                <a href="https://github.com/dineshcsdev/ToxicTools" target="_blank">GitHub</a>
+                <a href="mailto:dinesh.csdev@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

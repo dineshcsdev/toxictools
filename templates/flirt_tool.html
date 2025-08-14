@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}AI Flirt - ToxicTools{% endblock %}
+
+{% block content %}
+    <a href="/" class="back-link">← Back to Home</a>
+    <div class="container">
+        <div id="flirt-tool" class="tool-container">
+            <h1>AI Flirt</h1>
+            <p class="subtitle">Get a short, playful, and cheeky pickup line.</p>
+
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="English">English</button>
+                <button class="lang-btn" data-lang="Tamil">Tamil (தமிழ்)</button>
+                <button class="lang-btn" data-lang="Tanglish">Tanglish</button>
+            </div>
+
+            <input type="text" id="user-input" placeholder="What kind of person are you flirting with?">
+            <button id="generate-btn" class="action-btn">Generate Flirt</button>
+
+            <div class="response-wrapper">
+                <div id="response-container">
+                    <p>Your flirtatious line will appear here.</p>
+                </div>
+                <button class="copy-btn" data-target="response-container" style="display: none;">Copy</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
