@@ -1,6 +1,5 @@
 # ToxicTools
-
-![ToxicTools Logo Placeholder](https://via.placeholder.com/150x50?text=ToxicTools)
+ **Live Demo:** [https://toxictools.pythonanywhere.com](https://toxictools.pythonanywhere.com)
 
 **Brutally honest AI, built for fun — and for the people.**
 
